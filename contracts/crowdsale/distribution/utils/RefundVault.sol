@@ -29,7 +29,6 @@ contract RefundVault is Ownable {
   constructor(address _wallet) public {
     require(_wallet != address(0));
     wallet = _wallet;
-    state = State.Active;
   }
 
   /**
